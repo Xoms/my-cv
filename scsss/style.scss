@@ -130,7 +130,10 @@ section {
     line-height: 24px;
     padding-right: 15%;
 }
-
+.main-projects-item {
+    display: flex;
+    align-items: center;
+}
 .main-projects-item a, span{
     color:  #595959;
     font-size: 14px;
@@ -146,7 +149,7 @@ section {
     border-bottom: dotted 2px black;
     display: inline-block; 
     
-    align-self: flex-end;
+    align-self: center;
     transform: translateY(-5px);
     margin-right: 10px;
 }
