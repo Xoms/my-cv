@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -55,6 +56,7 @@ body, html {
 
 .sidebar-contacts-contact a {
   color: #ffffff;
+  text-decoration: none;
   opacity: 0.5;
   font-size: 14px;
   line-height: 24px;
@@ -64,11 +66,17 @@ body, html {
 }
 
 /*sidebar skills*/
-.sidebar-tech-skills, .sidebar-soft-skills {
+.sidebar-tech-skills,
+.sidebar-soft-skills {
   margin-left: 40px;
 }
 
-.sidebar-tech-skills-item, .sidebar-soft-skills-item {
+.skills-list {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-skills-item {
   color: #ff6b08;
   font-size: 14px;
   line-height: 24px;
@@ -76,7 +84,7 @@ body, html {
   letter-spacing: 0.42px;
 }
 
-.sidebar-tech-skills-item > span, .sidebar-soft-skills-item > span {
+.sidebar-skills-item > span {
   color: #ffffff;
 }
 
@@ -86,6 +94,7 @@ body, html {
   -webkit-box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
   padding-left: 10%;
+  padding-right: 10;
   width: 63%;
   color: #595959;
 }
@@ -154,7 +163,17 @@ section {
   padding-right: 15%;
 }
 
-.main-projects-item a, span {
+.main-projects-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-projects-item a,
+span {
   color: #595959;
   font-size: 14px;
   font-weight: 400;
@@ -163,21 +182,23 @@ section {
 }
 
 .width-calc {
-  width: calc((100% - 20px)/3);
+  width: calc((100% - 20px) / 3);
 }
 
 .main-projects__decoration--bottom-border {
   border-bottom: dotted 2px black;
   display: inline-block;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   margin-right: 10px;
 }
 
 /*Experience*/
-.company-title, .company-title span {
+.company-title,
+.company-title span {
   color: #000;
   font-size: 16px;
   font-weight: 700;
